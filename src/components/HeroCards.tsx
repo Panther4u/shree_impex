@@ -1,17 +1,17 @@
-import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
-import { Badge } from "./ui/badge";
-import { Button, buttonVariants } from "@/components/ui/button";
+// import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
+// import { Badge } from "./ui/badge";
+// import { Button, buttonVariants } from "@/components/ui/button";
 import {
   Card,
-  CardContent,
-  CardDescription,
+  // CardContent,
+  // CardDescription,
   CardHeader,
-  CardTitle,
-  CardFooter,
+  // CardTitle,
+  // CardFooter,
 } from "@/components/ui/card";
-import { Check, Linkedin } from "lucide-react";
-import { LightBulbIcon } from "./Icons";
-import { GitHubLogoIcon } from "@radix-ui/react-icons";
+// import { Check, Linkedin } from "lucide-react";
+// import { LightBulbIcon } from "./Icons";
+// import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import image from "../assets/Chicking.png";
 import image1 from "../assets/Packing.png";
 import image2 from "../assets/Stricing.png";
