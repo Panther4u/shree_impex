@@ -12,14 +12,19 @@ import {
 import { Check, Linkedin } from "lucide-react";
 import { LightBulbIcon } from "./Icons";
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
+import image from "../assets/Chicking.png";
+import image1 from "../assets/Packing.png";
+import image2 from "../assets/Stricing.png";
+import image3 from "../assets/Company.png";
+
 
 export const HeroCards = () => {
   return (
-    <div className="hidden lg:flex flex-row flex-wrap gap-8 relative w-[700px] h-[500px]">
+    <div className=" hidden lg:flex flex-row flex-wrap gap-8 relative">
       {/* Testimonial */}
       <Card className="absolute w-[340px] -top-[15px] drop-shadow-xl shadow-black/10 dark:shadow-white/10">
-        <CardHeader className="flex flex-row items-center gap-4 pb-2">
-          <Avatar>
+        <CardHeader className="flex flex-row items-center gap-4 pb-1">
+          {/* <Avatar>
             <AvatarImage
               alt=""
               src="https://github.com/shadcn.png"
@@ -30,16 +35,21 @@ export const HeroCards = () => {
           <div className="flex flex-col">
             <CardTitle className="text-lg">John Doe React</CardTitle>
             <CardDescription>@john_doe</CardDescription>
-          </div>
+          </div> */}
+                    <img
+            src={image}
+            alt="testimonial"
+            className="w-full h-32 object-cover rounded-lg mb-0"
+          />
         </CardHeader>
 
-        <CardContent>This landing page is awesome!</CardContent>
+        {/* <CardContent>This landing page is awesome!</CardContent> */}
       </Card>
 
       {/* Team */}
       <Card className="absolute right-[20px] top-4 w-80 flex flex-col justify-center items-center drop-shadow-xl shadow-black/10 dark:shadow-white/10">
-        <CardHeader className="mt-8 flex justify-center items-center pb-2">
-          <img
+        <CardHeader className="mt-0 flex justify-center items-center pb-1">
+          {/* <img
             src="https://i.pravatar.cc/150?img=58"
             alt="user avatar"
             className="absolute grayscale-[0%] -top-12 rounded-full w-24 h-24 aspect-square object-cover"
@@ -47,10 +57,15 @@ export const HeroCards = () => {
           <CardTitle className="text-center">Leo Miranda</CardTitle>
           <CardDescription className="font-normal text-primary">
             Frontend Developer
-          </CardDescription>
+          </CardDescription> */}
+                              <img
+            src={image3}
+            alt="testimonial"
+            className="w-full h-full object-cover rounded-lg mb-0"
+          />
         </CardHeader>
 
-        <CardContent className="text-center pb-2">
+        {/* <CardContent className="text-center pb-2">
           <p>
             I really enjoy transforming ideas into functional software that
             exceeds expectations
@@ -105,13 +120,18 @@ export const HeroCards = () => {
               <Linkedin size="20" />
             </a>
           </div>
-        </CardFooter>
+        </CardFooter> */}
       </Card>
 
       {/* Pricing */}
       <Card className="absolute top-[150px] left-[50px] w-72  drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardHeader>
-          <CardTitle className="flex item-center justify-between">
+        <img
+            src={image1}
+            alt="testimonial"
+            className="w-full h-full object-cover rounded-lg mb-0"
+          />
+          {/* <CardTitle className="flex item-center justify-between">
             Free
             <Badge
               variant="secondary"
@@ -127,9 +147,9 @@ export const HeroCards = () => {
 
           <CardDescription>
             Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.
-          </CardDescription>
+          </CardDescription> */}
         </CardHeader>
-
+{/* 
         <CardContent>
           <Button className="w-full">Start Free Trial</Button>
         </CardContent>
@@ -150,13 +170,13 @@ export const HeroCards = () => {
               )
             )}
           </div>
-        </CardFooter>
+        </CardFooter> */}
       </Card>
 
       {/* Service */}
       <Card className="absolute w-[350px] -right-[10px] bottom-[35px]  drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardHeader className="space-y-1 flex md:flex-row justify-start items-start gap-4">
-          <div className="mt-1 bg-primary/20 p-1 rounded-2xl">
+          {/* <div className="mt-1 bg-primary/20 p-1 rounded-2xl">
             <LightBulbIcon />
           </div>
           <div>
@@ -165,9 +185,16 @@ export const HeroCards = () => {
               Lorem ipsum dolor sit amet consect adipisicing elit. Consectetur
               natusm.
             </CardDescription>
-          </div>
+          </div> */}
+                                    <img
+            src={image2}
+            alt="testimonial"
+            className="w-full h-32 object-cover rounded-lg mb-0"
+          />
         </CardHeader>
+
       </Card>
     </div>
   );
 };
+

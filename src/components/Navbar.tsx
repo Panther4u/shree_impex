@@ -25,20 +25,20 @@ interface RouteProps {
 
 const routeList: RouteProps[] = [
   {
+    href: "#about",
+    label: "About",
+  },
+  {
     href: "#features",
-    label: "Features",
+    label: "Infrastructure",
   },
   {
-    href: "#testimonials",
-    label: "Testimonials",
+    href: "certifications",
+    label: "Certifications",
   },
   {
-    href: "#pricing",
-    label: "Pricing",
-  },
-  {
-    href: "#faq",
-    label: "FAQ",
+    href: "#team",
+    label: "Contact",
   },
 ];
 
@@ -55,7 +55,7 @@ export const Navbar = () => {
               className="ml-2 font-bold text-xl flex"
             >
               <LogoIcon />
-              ShadcnUI/React
+              Shree Amuthajothi Impex
             </a>
           </NavigationMenuItem>
 
@@ -94,7 +94,7 @@ export const Navbar = () => {
                       {label}
                     </a>
                   ))}
-                  <a
+                  {/* <a
                     rel="noreferrer noopener"
                     href="https://github.com/leoMirandaa/shadcn-landing-page.git"
                     target="_blank"
@@ -104,7 +104,7 @@ export const Navbar = () => {
                   >
                     <GitHubLogoIcon className="mr-2 w-5 h-5" />
                     Github
-                  </a>
+                  </a> */}
                 </nav>
               </SheetContent>
             </Sheet>
@@ -127,7 +127,7 @@ export const Navbar = () => {
           </nav>
 
           <div className="hidden md:flex gap-2">
-            <a
+            {/* <a
               rel="noreferrer noopener"
               href="https://github.com/leoMirandaa/shadcn-landing-page.git"
               target="_blank"
@@ -135,7 +135,7 @@ export const Navbar = () => {
             >
               <GitHubLogoIcon className="mr-2 w-5 h-5" />
               Github
-            </a>
+            </a> */}
 
             <ModeToggle />
           </div>

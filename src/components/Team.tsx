@@ -24,8 +24,8 @@ interface SociaNetworkslProps {
 const teamList: TeamProps[] = [
   {
     imageUrl: "https://i.pravatar.cc/150?img=35",
-    name: "Emma Smith",
-    position: "Product Manager",
+    name: "PALRAJ",
+    position: "MANAGING DIRECTOR",
     socialNetworks: [
       {
         name: "Linkedin",
@@ -43,8 +43,8 @@ const teamList: TeamProps[] = [
   },
   {
     imageUrl: "https://i.pravatar.cc/150?img=60",
-    name: "John Doe",
-    position: "Tech Lead",
+    name: "Karthick",
+    position: "Lead",
     socialNetworks: [
       {
         name: "Linkedin",
@@ -60,37 +60,37 @@ const teamList: TeamProps[] = [
       },
     ],
   },
-  {
-    imageUrl: "https://i.pravatar.cc/150?img=36",
-    name: "Ashley Ross",
-    position: "Frontend Developer",
-    socialNetworks: [
-      {
-        name: "Linkedin",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
-      },
+  // {
+  //   imageUrl: "https://i.pravatar.cc/150?img=36",
+  //   name: "Ashley Ross",
+  //   position: "Frontend Developer",
+  //   socialNetworks: [
+  //     {
+  //       name: "Linkedin",
+  //       url: "https://www.linkedin.com/in/leopoldo-miranda/",
+  //     },
 
-      {
-        name: "Instagram",
-        url: "https://www.instagram.com/",
-      },
-    ],
-  },
-  {
-    imageUrl: "https://i.pravatar.cc/150?img=17",
-    name: "Bruce Rogers",
-    position: "Backend Developer",
-    socialNetworks: [
-      {
-        name: "Linkedin",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
-      },
-      {
-        name: "Facebook",
-        url: "https://www.facebook.com/",
-      },
-    ],
-  },
+  //     {
+  //       name: "Instagram",
+  //       url: "https://www.instagram.com/",
+  //     },
+  //   ],
+  // },
+  // {
+  //   imageUrl: "https://i.pravatar.cc/150?img=17",
+  //   name: "Bruce Rogers",
+  //   position: "Backend Developer",
+  //   socialNetworks: [
+  //     {
+  //       name: "Linkedin",
+  //       url: "https://www.linkedin.com/in/leopoldo-miranda/",
+  //     },
+  //     {
+  //       name: "Facebook",
+  //       url: "https://www.facebook.com/",
+  //     },
+  //   ],
+  // },
 ];
 
 export const Team = () => {
@@ -110,21 +110,20 @@ export const Team = () => {
   return (
     <section
       id="team"
-      className="container py-24 sm:py-32"
+      className="container py-10 sm:py-20"
     >
-      <h2 className="text-3xl md:text-4xl font-bold">
+      <h2 className="text-3xl md:text-4xl font-bold text-center">
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
           Our Dedicated{" "}
         </span>
-        Crew
+        CEO
       </h2>
 
       <p className="mt-4 mb-10 text-xl text-muted-foreground">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis
-        dolor pariatur sit!
+      <br/>
       </p>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 gap-y-10">
+      <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 gap-y-10">
         {teamList.map(
           ({ imageUrl, name, position, socialNetworks }: TeamProps) => (
             <Card
@@ -137,14 +136,14 @@ export const Team = () => {
                   alt={`${name} ${position}`}
                   className="absolute -top-12 rounded-full w-24 h-24 aspect-square object-cover"
                 />
-                <CardTitle className="text-center">{name}</CardTitle>
+                <CardTitle className="text-center p-5 ">{name}</CardTitle>
                 <CardDescription className="text-primary">
                   {position}
                 </CardDescription>
               </CardHeader>
 
               <CardContent className="text-center pb-2">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p>Phone: +91 xxxxx xxxxx</p>
               </CardContent>
 
               <CardFooter>

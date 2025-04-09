@@ -6,9 +6,9 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import image from "../assets/growth.png";
-import image3 from "../assets/reflecting.png";
-import image4 from "../assets/looking-ahead.png";
+import image from "../assets/Stricing.png";
+import image3 from "../assets/Chicking.png";
+import image4 from "../assets/Packing.png";
 
 interface FeatureProps {
   title: string;
@@ -18,35 +18,34 @@ interface FeatureProps {
 
 const features: FeatureProps[] = [
   {
-    title: "Responsive Design",
+    title: "STITCHING AND FINISHING",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
-    image: image4,
+      "We have a fully equipped in-house stitching unit with huge capacities managed by line supervisors and quality controllers monitoring the quality of sewing and finishing constantly so that the buyer parameters are met consistently.",
+    image: image,
   },
   {
-    title: "Intuitive user interface",
+    title: "INSPECTION & QC",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "A raw inspection takes place at the early stage of every process to detect and avoid any possible defect. Employees are trained thoroughly when it comes to inspection standards, to ensure that there is absolutely no compromise on our QC, which happens at almost every stage of production.",
     image: image3,
   },
   {
-    title: "AI-Powered insights",
+    title: "PACKAGING",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
-    image: image,
+      "We have an efficient in-house packaging team working effectively on buyer requirements and standards. The packaging is done with utmost care to ensure the safety and integrity of the products throughout transit.",
+    image: image4,
   },
 ];
-
 const featureList: string[] = [
-  "Dark/Light theme",
-  "Reviews",
-  "Features",
-  "Pricing",
-  "Contact form",
-  "Our team",
-  "Responsive design",
-  "Newsletter",
-  "Minimalist",
+  "DIGITAL PRINTING",
+  "DESIGN STUDIO ",
+  "WEAVING",
+  "PRINTING UNIT",
+  "STITCHING AND FINISHING",
+  "EMBROIDERY UNIT",
+  "INSPECTION & QC",
+  "PACKAGING",
+  "STORAGE",
 ];
 
 export const Features = () => {
@@ -55,10 +54,10 @@ export const Features = () => {
       id="features"
       className="container py-24 sm:py-32 space-y-8"
     >
-      <h2 className="text-3xl lg:text-4xl font-bold md:text-center">
-        Many{" "}
+      <h2 className="text-3xl lg:text-4xl font-bold text-center">
+        
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-          Great Features
+          Infrastructure
         </span>
       </h2>
 
@@ -78,7 +77,7 @@ export const Features = () => {
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {features.map(({ title, description, image }: FeatureProps) => (
           <Card key={title}>
-            <CardHeader>
+            <CardHeader className="p-4 text-center">
               <CardTitle>{title}</CardTitle>
             </CardHeader>
 
@@ -88,7 +87,7 @@ export const Features = () => {
               <img
                 src={image}
                 alt="About feature"
-                className="w-[200px] lg:w-[300px] mx-auto"
+                className=" mx-auto"
               />
             </CardFooter>
           </Card>

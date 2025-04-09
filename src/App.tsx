@@ -24,13 +24,13 @@ function App() {
       <About />
       <HowItWorks />
       <Features />
-      <Services />
-      <Cta />
+      {/* <Services />
+      <Cta /> */}
       <Testimonials />
       <Team />
-      <Pricing />
+      {/* <Pricing /> */}
       <Newsletter />
-      <FAQ />
+      {/* <FAQ /> */}
       <Footer />
       <ScrollToTop />
     </>

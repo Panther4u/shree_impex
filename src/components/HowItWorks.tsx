@@ -10,49 +10,43 @@ interface FeatureProps {
 const features: FeatureProps[] = [
   {
     icon: <MedalIcon />,
-    title: "Accessibility",
+    title: "Sodex",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas provident cum",
+      "Health and happiness start from a clean home. Experience the best quality hygiene products.",
   },
   {
     icon: <MapIcon />,
-    title: "Community",
+    title: "OEKO TEX",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas provident cum",
+      "STANDARD 100 by OEKO-TEX® is one of the world’s most recognized labels for textiles tested for harmful substances, representing customer trust and high product safety. Certified by Hohenstein.",
   },
   {
     icon: <PlaneIcon />,
-    title: "Scalability",
+    title: "CTPAT",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas provident cum",
-  },
-  {
-    icon: <GiftIcon />,
-    title: "Gamification",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas provident cum",
+      "QIMA’s CTPAT audit provides a thorough third-party evaluation of your supply chain’s security practices to identify vulnerabilities. It helps secure your supply chain from terrorism, smuggling, and other illicit activities.",
   },
 ];
+
 
 export const HowItWorks = () => {
   return (
     <section
-      id="howItWorks"
-      className="container text-center py-24 sm:py-32"
+      id="certifications"
+      className="container text-center py-20 sm:py-20"
     >
       <h2 className="text-3xl md:text-4xl font-bold ">
-        How It{" "}
+        
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-          Works{" "}
+        Certifications{" "}
         </span>
-        Step-by-Step Guide
+        
       </h2>
       <p className="md:w-3/4 mx-auto mt-4 mb-8 text-xl text-muted-foreground">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis
-        dolor pariatur sit!
+      <br/>
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {features.map(({ icon, title, description }: FeatureProps) => (
           <Card
             key={title}
